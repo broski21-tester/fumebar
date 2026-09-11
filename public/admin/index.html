@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101112">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Fume Bar | Menu management</title>
+  <link rel="icon" href="../img/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../admin.css">
+  <script src="../config.js" defer></script>
+  <script src="../shared.js" defer></script>
+  <script src="../admin.js" defer></script>
+</head>
+<body class="admin-page">
+  <header class="topbar"><a class="wordmark" href="../index.html">FUME<span>BAR</span></a><div class="admin-top-actions"><a class="btn-text" href="../index.html" target="_blank" rel="noopener">View menu</a><button class="btn-secondary" type="button" id="logout" hidden>Sign out</button></div></header>
+  <main>
+    <section class="login-panel" id="loginPanel" aria-labelledby="loginTitle">
+      <img class="hero-logo" src="../img/logo.jpg" alt="Fume Bar" width="150" height="150">
+      <p class="eyebrow">Menu management</p>
+      <h1 id="loginTitle">A little behind the scenes.</h1>
+      <p class="login-copy">Sign in to manage your menu, prices and availability.</p>
+      <p class="notice" id="setupNotice" hidden>Set API_URL in config.js to connect your Google Apps Script deployment, then reload this page.</p>
+      <form id="loginForm"><div class="field"><label for="password">Admin password</label><input id="password" type="password" name="password" autocomplete="current-password" required></div><p class="error-message" id="loginError" role="alert" hidden></p><button class="btn-primary" id="loginSubmit" type="submit">Sign in</button></form>
+      <p class="login-note">Use the password set in your restaurant’s Settings sheet.</p>
+    </section>
+    <section class="admin-workspace" id="workspace" hidden aria-labelledby="workspaceTitle">
+      <div class="workspace-heading"><div><p class="eyebrow">Fume Bar / Administration</p><h1 id="workspaceTitle" tabindex="-1">Your menu, in order.</h1><p class="muted">Manage every item, including those hidden from guests.</p></div><button class="btn-primary" id="addItem" type="button">Add item</button></div>
+      <div class="stats"><div><span id="totalCount">0</span><p>Total items</p></div><div><span id="visibleCount">0</span><p>On the menu</p></div><div><span id="hiddenCount">0</span><p>Hidden</p></div></div>
+      <p class="notice" id="adminStatus" role="status" hidden></p>
+      <div class="admin-toolbar"><div class="field"><label for="sectionFilter">Section</label><select id="sectionFilter"><option value="">All sections</option></select></div><div class="toolbar-actions"><button class="btn-secondary" id="renameSection" type="button" hidden>Rename section</button><button class="btn-text danger" id="deleteSection" type="button" hidden>Delete section</button><button class="btn-secondary" id="reload" type="button">Refresh</button></div></div>
+      <div id="adminLoading" class="state" role="status" hidden><span class="spinner" aria-hidden="true"></span><p>Loading your menu…</p></div>
+      <div id="adminItems"></div>
+    </section>
+  </main>
+  <dialog id="editor" aria-labelledby="dialogTitle"><form id="editorForm"><div id="dialogBody"></div></form></dialog>
+  <datalist id="sectionsList"></datalist><datalist id="categoriesList"></datalist>
+  <footer class="admin-footer">Fume Bar · Menu management</footer>
+</body>
+</html>

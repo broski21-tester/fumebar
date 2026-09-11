@@ -1,0 +1,14 @@
+name = "fume-menu"
+main = "src/worker.js"
+compatibility_date = "2026-09-01"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = true
+html_handling = "none"
+not_found_handling = "none"
+
+[vars]
+# Optional same-origin proxy. Set this URL and use API_URL: "/api/menu" in public/config.js.
+# MENU_API_URL = "https://script.google.com/macros/s/YOUR_DEPLOYMENT/exec"

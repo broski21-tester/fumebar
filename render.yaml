@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: fume-menu
+    runtime: static
+    staticPublishPath: ./public
+    buildCommand: "true"
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /admin/*
+        name: X-Robots-Tag
+        value: noindex, nofollow
+    routes:
+      - type: redirect
+        source: /index.html/admin
+        destination: /admin/
+      - type: redirect
+        source: /index.html/admin/
+        destination: /admin/
+      - type: redirect
+        source: /admin
+        destination: /admin/
+      - type: rewrite
+        source: /admin/
+        destination: /admin/index.html
