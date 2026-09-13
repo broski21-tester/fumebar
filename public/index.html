@@ -37,6 +37,11 @@
     </aside>
     <main id="menuRoot" class="menu-root" tabindex="-1">
       <div class="menu-heading"><h2 id="menuTitle">The menu</h2><span class="currency-note" id="currencyNote">Prices in USD</span></div>
+      <div class="menu-search">
+        <label for="menuSearch" id="searchLabel">Find a dish</label>
+        <div class="search-input-row"><input id="menuSearch" type="search" placeholder="Search item names…" autocomplete="off" aria-controls="menuSections" dir="auto"><button id="clearSearch" type="button" class="btn-text" hidden>Clear</button></div>
+        <p id="searchResults" class="search-results" role="status" aria-live="polite" aria-atomic="true" hidden></p>
+      </div>
       <div class="notice" id="menuNotice" role="status" hidden></div>
       <div class="state" id="stateLoading" role="status"><span class="spinner" aria-hidden="true"></span><p id="loadingText">Preparing your menu…</p></div>
       <div class="state" id="stateError" role="alert" hidden><h3 id="errorTitle">The menu is taking a moment</h3><p id="errorDetail">Please check your connection and try again.</p><button class="btn-primary" id="btnRetry" type="button">Try again</button></div>

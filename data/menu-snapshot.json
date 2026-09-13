@@ -1,0 +1,1308 @@
+{
+  "restaurant": {
+    "name": "fume bar",
+    "tagline": "Restaurant · Lounge · Sushi",
+    "taglineAr": "مطعم · لاونج · سوشي",
+    "currency": "USD",
+    "phone": "+961 1 791 000",
+    "address": "Lancaster Plaza, General de Gaulle Avenue, Raouche — Beirut, Lebanon",
+    "instagram": "https://www.instagram.com/lancasterplazabeirut/",
+    "facebook": "https://www.facebook.com/LancasterPlazabeirut/",
+    "logoUrl": "img/logo.jpg"
+  },
+  "menu": {
+    "title": "Fume Menu",
+    "sections": [
+      {
+        "name": "Breakfast",
+        "nameAr": "الفطور",
+        "items": [
+          {
+            "id": "i001",
+            "nameEn": "Lebanese Breakfast",
+            "nameAr": "الفطور اللبناني",
+            "desc": "Apple or Chilled Fruit Juice (Apple, Pineapple, Exotic) | Foul Moudammas Plate | Lebanese Labneh Plate | Assorted Lebanese Cheese Plate | Fresh Mixed Vegetables, Pickles & Olives Plate | Arabic Bread | Lebanese Kunafa | Halawi Plate | Two Eggs: with your choice of (Awarma, Shakshouka, Sojouk) | Tea, Coffee or Hot Chocolate)",
+            "price": 24,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i002",
+            "nameEn": "Continental Breakfast",
+            "nameAr": "الفطور الكونتيننتال",
+            "desc": "Apple or Chilled Fruit Juice (Apple, Pineapple, Exotic) | Freshly Baked: Croissant, Danish, Bread Rolls & Toast | Honey, Jam & Butter | Tea, Coffee or Chocolate",
+            "price": 22,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i003",
+            "nameEn": "Cold Cuts Plate",
+            "nameAr": "طبق لحوم باردة مشكلة",
+            "desc": "Smoked Turkey, Beef Mortadella, Chicken Mortadella and Bresaola",
+            "price": 12,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i004",
+            "nameEn": "Lebanese Cheese Plate",
+            "nameAr": "طبق أجبان لبنانية",
+            "desc": "",
+            "price": 14,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i005",
+            "nameEn": "International Cheese Plate",
+            "nameAr": "تشكيلة من الأجبان الأوروبية",
+            "desc": "Cheddar; Emmental; Goat Cheese & Kashkaval Served with bread basket (2 Pain-de-Mie; 2 Pita bread & 2 bread rolls).",
+            "price": 18,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i006",
+            "nameEn": "3 Eggs",
+            "nameAr": "3 بيضات",
+            "desc": "",
+            "price": 7,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i007",
+            "nameEn": "Mini Manakish",
+            "nameAr": "مناقيش صغيرة",
+            "desc": "",
+            "price": 7,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i008",
+            "nameEn": "Foul Moudammas",
+            "nameAr": "فول مدمس",
+            "desc": "Served with vegetables plate; Pita bread and Olive oil",
+            "price": 7,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i009",
+            "nameEn": "Pancake",
+            "nameAr": "بان كيك",
+            "desc": "3 Pancakes; Served with fresh Fruits & Maple Syrup",
+            "price": 8,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i010",
+            "nameEn": "Jam & Butter",
+            "nameAr": "مربى و زبدة",
+            "desc": "Jam (Apricot & Strawberry); Honey & 2 Butter; served with bread basket; 2 bread rolls; 2 Pain-de-Mie & 2 Pita bread.",
+            "price": 8,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          }
+        ],
+        "categories": []
+      },
+      {
+        "name": "Starters",
+        "nameAr": "المقبلات",
+        "items": [
+          {
+            "id": "i011",
+            "nameEn": "Dynamite Shrimp",
+            "nameAr": "داينمايت شريمبس",
+            "desc": "Scallions, Spicy Sauce",
+            "price": 15,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i012",
+            "nameEn": "Truffle Parmesan Fries",
+            "nameAr": "ترافل بارميزون والبطاطا",
+            "desc": "",
+            "price": 10,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i013",
+            "nameEn": "Mexican Nachos",
+            "nameAr": "مكسيكان ناتشوز",
+            "desc": "Nachos Under Cheddar Cheese, Served With Jalapenos, Tomato Salsa, Guacamole & Sour Cream",
+            "price": 15,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i014",
+            "nameEn": "French Fries",
+            "nameAr": "بطاطا مقلية",
+            "desc": "",
+            "price": 7,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i015",
+            "nameEn": "Lentil Soup",
+            "nameAr": "شوربة العدس",
+            "desc": "",
+            "price": 7,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          }
+        ],
+        "categories": []
+      },
+      {
+        "name": "Lebanese Corner",
+        "nameAr": "الزاوية اللبنانية",
+        "items": [
+          {
+            "id": "i016",
+            "nameEn": "Fattoush",
+            "nameAr": "فتوش",
+            "desc": "",
+            "price": 7,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i017",
+            "nameEn": "Tabbouleh",
+            "nameAr": "تبولة",
+            "desc": "",
+            "price": 7,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i018",
+            "nameEn": "Caesar Salad",
+            "nameAr": "سلطة التشيكن سيزر",
+            "desc": "Crisp Iceberg Lettuce With Golden Croutons & Parmesan Cheese Shavings, Served With Caesar Dressing",
+            "price": 10,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i019",
+            "nameEn": "Mixed Mouajanat",
+            "nameAr": "معجنات مشكلة",
+            "desc": "Sambousek, Kebbeh, Rakakat Cheese",
+            "price": 15,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i020",
+            "nameEn": "Hummus",
+            "nameAr": "حمص",
+            "desc": "",
+            "price": 6,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i021",
+            "nameEn": "Moutabal",
+            "nameAr": "متبل",
+            "desc": "",
+            "price": 6,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i022",
+            "nameEn": "Vine Leaves",
+            "nameAr": "ورق عنب",
+            "desc": "",
+            "price": 7,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i023",
+            "nameEn": "Labneh Plate",
+            "nameAr": "صحن لبنة",
+            "desc": "Served with vegetables plate; Pita bread and Olive oil",
+            "price": 7,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i024",
+            "nameEn": "Hummus with Meat",
+            "nameAr": "حمص باللحم",
+            "desc": "",
+            "price": 12,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i025",
+            "nameEn": "Spicy Potato",
+            "nameAr": "بطاطا حارة",
+            "desc": "",
+            "price": 7,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i026",
+            "nameEn": "Makanek",
+            "nameAr": "مقانق",
+            "desc": "",
+            "price": 10,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i027",
+            "nameEn": "Soujouk",
+            "nameAr": "سجق",
+            "desc": "",
+            "price": 10,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i028",
+            "nameEn": "Earthquake Salad",
+            "nameAr": "سلطة إيرثكويك",
+            "desc": "Grilled Shrimps, Crunchy Leaves, Fresh Pomegranate Seeds, Mushrooms & Cherry Tomatoes, Served With Basil Mayo Dressing.",
+            "price": 18,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          }
+        ],
+        "categories": []
+      },
+      {
+        "name": "Sandwiches",
+        "nameAr": "الساندويتشات",
+        "items": [
+          {
+            "id": "i029",
+            "nameEn": "Plaza Burger",
+            "nameAr": "برغر بلازا",
+            "desc": "Our homemade char-grilled beef to perfection, Cheddar cheese, grilled Tomato & sautéed mushrooms, served with our special dressing",
+            "price": 16,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i030",
+            "nameEn": "Club Sandwich",
+            "nameAr": "كلوب ساندويش",
+            "desc": "Grilled Chicken in Pain Demi, Fried Eggs, Turkey Bacon, Tomato & Lettuce",
+            "price": 16,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i031",
+            "nameEn": "NY Steak Sandwich",
+            "nameAr": "نيو يورك ستيك سندويش",
+            "desc": "Sautéed Beef With Bell Pepper, Fresh Mushrooms, Caramelized Onions & Cheddar Cheese",
+            "price": 19,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i032",
+            "nameEn": "Chicken Burger",
+            "nameAr": "برغر الدجاج",
+            "desc": "Charcoal grilled chicken breast coated with herbs & crispy lettuce & sundried tomatoes; topped with Parmesan & served with a spread of cocktail sauce",
+            "price": 15,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i033",
+            "nameEn": "Chicken Avocado",
+            "nameAr": "تشيكن افوكادو",
+            "desc": "Avocado, Baguette Brown, Rocca, Grilled Chicken Breast, Panko Sauce",
+            "price": 16,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          }
+        ],
+        "categories": []
+      },
+      {
+        "name": "Pasta",
+        "nameAr": "المعكرونة",
+        "items": [
+          {
+            "id": "i034",
+            "nameEn": "Chicken Alfredo",
+            "nameAr": "دجاج ألفريدو",
+            "desc": "Fettuccine With Chicken, Mushrooms, Creamy Sauce, Truffle Paste & Oil, Fresh Basil",
+            "price": 18,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i035",
+            "nameEn": "Spaghetti Bolognaise",
+            "nameAr": "سباغيتي بولونيز",
+            "desc": "Spaghetti With Tomato & Minced Meat Sauce",
+            "price": 16,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i036",
+            "nameEn": "Penne Arabiata",
+            "nameAr": "بيني أرابياتا",
+            "desc": "Penne Served With Spicy Tomato Sauce & Herbs",
+            "price": 14,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          }
+        ],
+        "categories": []
+      },
+      {
+        "name": "Main Course",
+        "nameAr": "الأطباق الرئيسية",
+        "items": [
+          {
+            "id": "i037",
+            "nameEn": "Grilled Chicken Breast",
+            "nameAr": "صدر دجاج مشوي",
+            "desc": "",
+            "price": 20,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i038",
+            "nameEn": "Australian Beef Tenderloin",
+            "nameAr": "بيف فيليه",
+            "desc": "Australian Char-grilled Beef Tenderloin Served With Mushroom Sauce",
+            "price": 28,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i039",
+            "nameEn": "Chicken Shawarma",
+            "nameAr": "شاورما دجاج",
+            "desc": "",
+            "price": 12,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i040",
+            "nameEn": "Chicken Cordon Bleu",
+            "nameAr": "دجاج كوردون بلو",
+            "desc": "Turkey ham, cheese, Mashed potato, steamed veggie",
+            "price": 18,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i041",
+            "nameEn": "Grilled Salmon",
+            "nameAr": "سلمون مشوي",
+            "desc": "",
+            "price": 30,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i042",
+            "nameEn": "Beef Shawarma",
+            "nameAr": "شاورما لحمة",
+            "desc": "",
+            "price": 14,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          }
+        ],
+        "categories": [
+          {
+            "name": "Add-on",
+            "nameAr": "إضافات",
+            "items": [
+              {
+                "id": "i043",
+                "nameEn": "Add Extra Chicken",
+                "nameAr": "إضافة دجاج",
+                "desc": "",
+                "price": 8,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i044",
+                "nameEn": "Add Extra Shrimp",
+                "nameAr": "إضافة روبيان",
+                "desc": "",
+                "price": 10,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sides",
+        "nameAr": "الأطباق الجانبية",
+        "items": [
+          {
+            "id": "i045",
+            "nameEn": "Bread Basket",
+            "nameAr": "سلة خبز",
+            "desc": "2 Bread rolls; 2 Pain-de-Mie; 2 Pita bread; 2 Toast & 2 butter Served with butter; Honey & Jam (Apricot & Strawberry).",
+            "price": 6,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i046",
+            "nameEn": "Side Yogurt",
+            "nameAr": "لبن زبادي جانبي",
+            "desc": "",
+            "price": 5,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i047",
+            "nameEn": "Bakery Basket",
+            "nameAr": "سلة مخبوزات",
+            "desc": "",
+            "price": 10,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          }
+        ],
+        "categories": []
+      },
+      {
+        "name": "Sushi",
+        "nameAr": "سوشي",
+        "items": [],
+        "categories": [
+          {
+            "name": "Salads",
+            "nameAr": "سلطات",
+            "items": [
+              {
+                "id": "i048",
+                "nameEn": "Crazy Crab Salad",
+                "nameAr": "",
+                "desc": "",
+                "price": 15,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i049",
+                "nameEn": "Crazy Salmon Salad",
+                "nameAr": "",
+                "desc": "",
+                "price": 22,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i050",
+                "nameEn": "Salmon Tataki Salad",
+                "nameAr": "",
+                "desc": "",
+                "price": 22,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i051",
+                "nameEn": "Tuna Tataki Salad",
+                "nameAr": "",
+                "desc": "",
+                "price": 22,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              }
+            ]
+          },
+          {
+            "name": "Hosomaki / 3 pieces",
+            "nameAr": "هوسوماكي / 3 قطع",
+            "items": [
+              {
+                "id": "i052",
+                "nameEn": "Avocado",
+                "nameAr": "",
+                "desc": "",
+                "price": 6,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i053",
+                "nameEn": "Crab",
+                "nameAr": "",
+                "desc": "",
+                "price": 6,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i054",
+                "nameEn": "Tuna",
+                "nameAr": "",
+                "desc": "",
+                "price": 8,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i055",
+                "nameEn": "Salmon",
+                "nameAr": "",
+                "desc": "",
+                "price": 9,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i056",
+                "nameEn": "Kappa",
+                "nameAr": "",
+                "desc": "",
+                "price": 5,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i057",
+                "nameEn": "Shrimp",
+                "nameAr": "",
+                "desc": "",
+                "price": 8,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i058",
+                "nameEn": "Unagi",
+                "nameAr": "",
+                "desc": "",
+                "price": 9,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              }
+            ]
+          },
+          {
+            "name": "Uramaki / 4 pieces",
+            "nameAr": "أوراماكي / 4 قطع",
+            "items": [
+              {
+                "id": "i059",
+                "nameEn": "Ebico California",
+                "nameAr": "",
+                "desc": "",
+                "price": 6,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i060",
+                "nameEn": "Tanoki",
+                "nameAr": "",
+                "desc": "",
+                "price": 6,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i061",
+                "nameEn": "Naked Spicy Volcano",
+                "nameAr": "",
+                "desc": "",
+                "price": 12,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i062",
+                "nameEn": "Crazy Salmon",
+                "nameAr": "",
+                "desc": "",
+                "price": 10,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i063",
+                "nameEn": "Black Tail",
+                "nameAr": "",
+                "desc": "",
+                "price": 10,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i064",
+                "nameEn": "Spicy Volcano",
+                "nameAr": "",
+                "desc": "",
+                "price": 14,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i065",
+                "nameEn": "Sesame California",
+                "nameAr": "",
+                "desc": "",
+                "price": 8,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i066",
+                "nameEn": "Crispy Crazy",
+                "nameAr": "",
+                "desc": "",
+                "price": 7,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i067",
+                "nameEn": "Chili Shrimp",
+                "nameAr": "",
+                "desc": "",
+                "price": 8,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i068",
+                "nameEn": "Crazy Wrap",
+                "nameAr": "",
+                "desc": "",
+                "price": 6,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i069",
+                "nameEn": "Salmon Crispy",
+                "nameAr": "",
+                "desc": "",
+                "price": 12,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i070",
+                "nameEn": "Cheesy Salmon",
+                "nameAr": "",
+                "desc": "",
+                "price": 12,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              }
+            ]
+          },
+          {
+            "name": "Uramaki Signatures / 8 pieces",
+            "nameAr": "أوراماكي سيناتشر / 8 قطع",
+            "items": [
+              {
+                "id": "i071",
+                "nameEn": "Rainbow",
+                "nameAr": "",
+                "desc": "",
+                "price": 17,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i072",
+                "nameEn": "Sunset",
+                "nameAr": "",
+                "desc": "",
+                "price": 13,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i073",
+                "nameEn": "Dragon",
+                "nameAr": "",
+                "desc": "",
+                "price": 13,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i074",
+                "nameEn": "Caterpillar",
+                "nameAr": "",
+                "desc": "",
+                "price": 13,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i075",
+                "nameEn": "Shrimp Lover",
+                "nameAr": "",
+                "desc": "",
+                "price": 13,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              }
+            ]
+          },
+          {
+            "name": "Temaki",
+            "nameAr": "تيماكي",
+            "items": [
+              {
+                "id": "i076",
+                "nameEn": "California",
+                "nameAr": "",
+                "desc": "",
+                "price": 7,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i077",
+                "nameEn": "Salmon",
+                "nameAr": "",
+                "desc": "",
+                "price": 8,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i078",
+                "nameEn": "Norwegian",
+                "nameAr": "",
+                "desc": "",
+                "price": 10,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i079",
+                "nameEn": "Tuna",
+                "nameAr": "",
+                "desc": "",
+                "price": 8,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              }
+            ]
+          },
+          {
+            "name": "Sashimi / 3 pieces",
+            "nameAr": "ساشيمي / 3 قطع",
+            "items": [
+              {
+                "id": "i080",
+                "nameEn": "Crab",
+                "nameAr": "",
+                "desc": "",
+                "price": 6,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i081",
+                "nameEn": "Salmon",
+                "nameAr": "",
+                "desc": "",
+                "price": 12,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i082",
+                "nameEn": "Shrimp 30 g",
+                "nameAr": "",
+                "desc": "",
+                "price": 6,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i083",
+                "nameEn": "Scalopp",
+                "nameAr": "",
+                "desc": "",
+                "price": 10,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i084",
+                "nameEn": "Hamachi",
+                "nameAr": "",
+                "desc": "",
+                "price": 10,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i085",
+                "nameEn": "Tuna",
+                "nameAr": "",
+                "desc": "",
+                "price": 10,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i086",
+                "nameEn": "Unagi",
+                "nameAr": "",
+                "desc": "",
+                "price": 10,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i087",
+                "nameEn": "White Fish",
+                "nameAr": "",
+                "desc": "",
+                "price": 20,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              }
+            ]
+          },
+          {
+            "name": "Nigiri / 2 pieces",
+            "nameAr": "نيغيري / قطعتان",
+            "items": [
+              {
+                "id": "i088",
+                "nameEn": "Shrimp",
+                "nameAr": "",
+                "desc": "",
+                "price": 5,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i089",
+                "nameEn": "White Fish",
+                "nameAr": "",
+                "desc": "",
+                "price": 12,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i090",
+                "nameEn": "Unagi",
+                "nameAr": "",
+                "desc": "",
+                "price": 7,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i091",
+                "nameEn": "Crab",
+                "nameAr": "",
+                "desc": "",
+                "price": 4,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i092",
+                "nameEn": "Salmon",
+                "nameAr": "",
+                "desc": "",
+                "price": 8,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i093",
+                "nameEn": "Tuna",
+                "nameAr": "",
+                "desc": "",
+                "price": 8,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              }
+            ]
+          },
+          {
+            "name": "Futo Maki / 5 pieces",
+            "nameAr": "فوتو ماكي / 5 قطع",
+            "items": [
+              {
+                "id": "i094",
+                "nameEn": "Orange Blossom",
+                "nameAr": "",
+                "desc": "",
+                "price": 9,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              }
+            ]
+          },
+          {
+            "name": "Sets",
+            "nameAr": "تشكيلات",
+            "items": [
+              {
+                "id": "i095",
+                "nameEn": "Sashimi Mix - 9 Pieces",
+                "nameAr": "",
+                "desc": "",
+                "price": 30,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i096",
+                "nameEn": "Plaza Classic Sushi - 14 Pieces",
+                "nameAr": "",
+                "desc": "",
+                "price": 25,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i097",
+                "nameEn": "Plaza Premium Sushi - 25 Pieces",
+                "nameAr": "",
+                "desc": "",
+                "price": 45,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i098",
+                "nameEn": "Crab Lovers - 17 Pieces",
+                "nameAr": "",
+                "desc": "",
+                "price": 25,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i099",
+                "nameEn": "Plaza Royal Mix - 30 Pieces",
+                "nameAr": "",
+                "desc": "",
+                "price": 82,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              },
+              {
+                "id": "i100",
+                "nameEn": "Salmon Platter Set - 16 Pieces",
+                "nameAr": "",
+                "desc": "",
+                "price": 38,
+                "priceSmall": null,
+                "priceMedium": null,
+                "priceLarge": null,
+                "calories": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dessert",
+        "nameAr": "الحلويات",
+        "items": [
+          {
+            "id": "i101",
+            "nameEn": "Fresh Fruit Cuts Plate",
+            "nameAr": "فاكهة طازجة مقطعة",
+            "desc": "",
+            "price": 15,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i102",
+            "nameEn": "Chocolate Fondante",
+            "nameAr": "فوندان الشوكولاتة",
+            "desc": "Chocolate fondante with Vanilla Ice Cream",
+            "price": 10,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i103",
+            "nameEn": "Raspberry Cheesecake",
+            "nameAr": "تشيز كيك بالتوت الأحمر",
+            "desc": "Streusel biscuit topped with Philadelphia cream cheese & red berries compote",
+            "price": 10,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i104",
+            "nameEn": "Ice Cream & Sorbet",
+            "nameAr": "بوظة وسوربيه",
+            "desc": "Your choice of 3 scoops: Chocolate, Vanilla, Dulce de leche, Strawberry, Raspberry, Lemon, Mango & Mandarin",
+            "price": 3,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i105",
+            "nameEn": "Tiramisu",
+            "nameAr": "تيراميسو",
+            "desc": "Light and creamy coffee-flavored dessert with layers of mascarpone and cocoa.",
+            "price": 10,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          },
+          {
+            "id": "i106",
+            "nameEn": "Cheese Kunafa",
+            "nameAr": "كنافة بالجبنة",
+            "desc": "",
+            "price": 10,
+            "priceSmall": null,
+            "priceMedium": null,
+            "priceLarge": null,
+            "calories": null
+          }
+        ],
+        "categories": []
+      }
+    ]
+  }
+}

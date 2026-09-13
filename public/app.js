@@ -3,7 +3,7 @@
   'use strict';
   const F = window.Fume, $ = id => document.getElementById(id), e = F.esc;
   let lang = F.storage.get('fume-lang') === 'ar' ? 'ar' : 'en';
-  let data = null, observer = null, loadNumber = 0, stale = false;
+  let data = null, observer = null, loadNumber = 0, stale = false, query = '';
   const t = (en, ar) => lang === 'ar' ? (ar || en) : en;
   function translate() {
     document.documentElement.lang = lang;
@@ -15,9 +15,14 @@
     $('menuTitle').textContent = t('The menu', 'قائمة الطعام');
     $('loadingText').textContent = t('Preparing your menu…', 'جارٍ تحميل القائمة…');
     $('errorTitle').textContent = t('The menu is taking a moment', 'تعذّر تحميل القائمة');
-    $('errorDetail').textContent = t('Please check your connection and try again.', 'يرجى التحقق من اتصالك وإعادة المحاولة.');
+    $('errorDetail').textContent = t('Please ask your waiter for the menu, or try again in a moment.', 'يرجى التحقق من اتصالك وإعادة المحاولة.');
     $('btnRetry').textContent = t('Try again', 'حاول مجدداً');
-    $('emptyText').textContent = t('The menu is being updated. Please check back shortly.', 'يتم تحديث القائمة. يرجى المحاولة لاحقاً.');
+    $('emptyText').textContent = query.trim() ? t('No items match this name. Try another name or clear your search.', 'لا توجد أصناف بهذا الاسم. جرّب اسماً آخر أو امسح البحث.') : t('The menu is being updated. Please check back shortly.', 'يتم تحديث القائمة. يرجى المحاولة لاحقاً.');
+    $('searchLabel').textContent = t('Find a dish', 'ابحث عن طبق');
+    $('menuSearch').placeholder = t('Search item names…', 'ابحث بأسماء الأصناف…');
+    $('clearSearch').textContent = t('Clear', 'مسح');
+    $('clearSearch').hidden = !query;
+
     $('menuNotice').hidden = !stale;
     $('menuNotice').textContent = t('Showing the last saved menu. Please confirm availability and prices with your waiter.', 'نعرض آخر قائمة محفوظة. يرجى تأكيد التوفر والأسعار مع النادل.');
   }
@@ -45,8 +50,8 @@
     $('heroMeta').textContent = t(rest.address || '', rest.addressAr);
     $('currencyNote').textContent = t('Prices in ', 'الأسعار بـ ') + currency;
     const sections = data.menu.sections.map(section => Object.assign({}, section, {
-      items: (section.items || []).filter(i => i.available !== false),
-      categories: (section.categories || []).map(c => Object.assign({}, c, {items: (c.items || []).filter(i => i.available !== false)})).filter(c => c.items.length)
+      items: (section.items || []).filter(i => i.available !== false && F.matchesName(i, query)),
+      categories: (section.categories || []).map(c => Object.assign({}, c, {items: (c.items || []).filter(i => i.available !== false && F.matchesName(i, query))})).filter(c => c.items.length)
     })).filter(s => s.items.length || s.categories.length);
     $('catnav').innerHTML = sections.map((section, i) => '<a class="cat-link" href="#section-' + i + '"' + (i === 0 ? ' aria-current="location"' : '') + '><span>' + e(t(section.name, section.nameAr)) + '</span><span class="nav-number" aria-hidden="true">' + String(i + 1).padStart(2, '0') + '</span></a>').join('');
     $('menuSections').innerHTML = sections.map((section, i) => {
@@ -55,6 +60,9 @@
         (section.items.length ? '<ul class="items">' + section.items.map(it => itemHtml(it, currency)).join('') + '</ul>' : '') +
         section.categories.map(cat => '<div class="menu-category"><h4 class="category-title">' + e(t(cat.name, cat.nameAr)) + '</h4><ul class="items">' + cat.items.map(it => itemHtml(it, currency)).join('') + '</ul></div>').join('') + '</section>';
     }).join('');
+    const resultCount = sections.reduce((n, section) => n + section.items.length + section.categories.reduce((total, c) => total + c.items.length, 0), 0);
+    $('searchResults').hidden = !query.trim();
+    $('searchResults').textContent = t(resultCount + (resultCount === 1 ? ' item found' : ' items found'), 'عدد الأصناف: ' + resultCount);
     $('stateEmpty').hidden = sections.length !== 0;
     $('stateLoading').hidden = true;
     $('stateError').hidden = true;
@@ -88,9 +96,6 @@
     } catch (_) {
       if (current !== loadNumber) return;
       let fallback = data || F.cacheRead();
-      if (!fallback && F.api) {
-        try { fallback = F.validate(await F.request(new URL(F.config.FALLBACK_URL || 'data/menu.json', F.base).href)); } catch (_) {}
-      }
       if (current !== loadNumber) return;
       data = fallback;
       stale = !!data;
@@ -103,8 +108,12 @@
     lang = value; F.storage.set('fume-lang', value); render();
   }));
   $('catnav').addEventListener('click', event => { const link = event.target.closest('a'); if (link) activate(link.getAttribute('href')); });
+  function search() { query = $('menuSearch').value; render(); }
+  $('menuSearch').addEventListener('input', search);
+  $('menuSearch').addEventListener('search', search);
+  $('clearSearch').addEventListener('click', () => { $('menuSearch').value = ''; query = ''; render(); $('menuSearch').focus(); });
   $('btnRetry').addEventListener('click', load);
-  window.addEventListener('storage', event => { if (event.key && event.key.startsWith('fume-menu-v3:') && !event.newValue) load(); });
+  window.addEventListener('storage', event => { if (event.key && event.key.startsWith('fume-menu-supabase-v1:') && !event.newValue) load(); });
   window.addEventListener('focus', load);
   translate();
   data = F.cacheRead();

@@ -24,9 +24,9 @@
       <p class="eyebrow">Menu management</p>
       <h1 id="loginTitle">A little behind the scenes.</h1>
       <p class="login-copy">Sign in to manage your menu, prices and availability.</p>
-      <p class="notice" id="setupNotice" hidden>Set API_URL in config.js to connect your Google Apps Script deployment, then reload this page.</p>
-      <form id="loginForm"><div class="field"><label for="password">Admin password</label><input id="password" type="password" name="password" autocomplete="current-password" required></div><p class="error-message" id="loginError" role="alert" hidden></p><button class="btn-primary" id="loginSubmit" type="submit">Sign in</button></form>
-      <p class="login-note">Use the password set in your restaurant’s Settings sheet.</p>
+      <p class="notice" id="setupNotice" hidden>Set your Supabase project URL and publishable key in config.js, then reload this page.</p>
+      <form id="loginForm"><div class="field"><label for="email">Admin email</label><input id="email" type="email" name="email" autocomplete="username" required></div><div class="field"><label for="password">Admin password</label><input id="password" type="password" name="password" autocomplete="current-password" required></div><p class="error-message" id="loginError" role="alert" hidden></p><button class="btn-primary" id="loginSubmit" type="submit">Sign in</button></form>
+      <p class="login-note">Use your restaurant’s Supabase admin account.</p>
     </section>
     <section class="admin-workspace" id="workspace" hidden aria-labelledby="workspaceTitle">
       <div class="workspace-heading"><div><p class="eyebrow">Fume Bar / Administration</p><h1 id="workspaceTitle" tabindex="-1">Your menu, in order.</h1><p class="muted">Manage every item, including those hidden from guests.</p></div><button class="btn-primary" id="addItem" type="button">Add item</button></div>

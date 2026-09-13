@@ -1,11 +1,11 @@
 (function () {
   'use strict';
   const F = window.Fume, $ = id => document.getElementById(id), e = F.esc;
-  let password = '', data = null, selected = '', busy = false, epoch = 0, returnFocus = null;
+  let data = null, selected = '', busy = false, epoch = 0, returnFocus = null;
   // Remove credentials left by the previous inline editor.
   try { sessionStorage.removeItem('fume-admin-pw'); } catch (_) {}
   const dialog = $('editor');
-  const post = (action, payload = {}) => F.post(action, payload, password);
+  const post = (action, payload = {}) => F.post(action, payload);
   function status(message, error = false) {
     $('adminStatus').hidden = !message;
     $('adminStatus').textContent = message;
@@ -23,13 +23,15 @@
   }
   function showLogin() {
     epoch++;
-    password = ''; data = null; selected = '';
+    data = null; selected = '';
     F.clearCache();
     $('adminItems').innerHTML = '';
     $('workspace').hidden = true;
     $('logout').hidden = true;
     $('loginPanel').hidden = false;
     $('password').value = '';
+    if (dialog.open) dialog.close();
+    lock(false);
     $('password').focus();
   }
   async function reload(message = '') {
@@ -170,21 +172,21 @@
   $('loginForm').addEventListener('submit', async event => {
     event.preventDefault();
     $('loginSubmit').disabled = true; $('loginSubmit').textContent = 'Signing in…'; $('loginError').hidden = true;
-    password = $('password').value;
     try {
-      await post('auth');
+      await F.signIn($('email').value, $('password').value);
       data = F.validate(await post('adminMenu'));
       epoch++;
       $('password').value = '';
       $('loginPanel').hidden = true; $('workspace').hidden = false; $('logout').hidden = false;
       render(); status(''); $('workspaceTitle').focus();
     } catch (err) {
-      password = ''; data = null;
-      $('loginError').textContent = err.message.includes('Unknown action') ? 'Update Code.gs and Setup.gs, run upgradeWorkbook(), then publish a new version of your Apps Script deployment. This editor needs the updated admin API.' : err.message;
+      data = null; await F.signOut();
+      $('loginError').textContent = err.message;
       $('loginError').hidden = false;
     } finally { $('loginSubmit').disabled = false; $('loginSubmit').textContent = 'Sign in'; }
   });
-  $('logout').onclick = showLogin;
+  $('logout').onclick = () => { F.signOut(); showLogin(); };
+  window.addEventListener('fume-session-expired', () => { showLogin(); $('loginError').textContent = 'Your session expired. Please sign in again.'; $('loginError').hidden = false; });
   $('reload').onclick = () => reload();
   $('addItem').onclick = () => { if (data && !busy) edit(null, selected); };
   $('sectionFilter').onchange = () => { selected = $('sectionFilter').value; render(); };
@@ -202,5 +204,5 @@
   dialog.addEventListener('cancel', event => { if (busy) event.preventDefault(); });
   dialog.addEventListener('close', () => { if (returnFocus && returnFocus.isConnected) returnFocus.focus(); });
   dialog.addEventListener('click', event => { if (event.target === dialog && !busy) { const r = dialog.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close(); } });
-  if (!F.api) { $('setupNotice').hidden = false; $('loginSubmit').disabled = true; $('password').disabled = true; }
+  if (!F.api || !F.config.SUPABASE_PUBLISHABLE_KEY) { $('setupNotice').hidden = false; $('loginSubmit').disabled = true; $('password').disabled = true; }
 })();

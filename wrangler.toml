@@ -9,6 +9,3 @@ run_worker_first = true
 html_handling = "none"
 not_found_handling = "none"
 
-[vars]
-# Optional same-origin proxy. Set this URL and use API_URL: "/api/menu" in public/config.js.
-# MENU_API_URL = "https://script.google.com/macros/s/YOUR_DEPLOYMENT/exec"
